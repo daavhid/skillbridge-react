@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'rubiks';
+    src: url('assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'rubik';
+    src: url('assets/fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    *{
+       /* font-family: rubik; */
+    }
+}
+
+.bg-fill{
+    background-image: url('assets/hero.jpeg');
+    background-position: center top ;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.bg-about{
+    background-image: url('./assets/home.jpeg');
+    background-position: center top ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+.bg-fill::after,.bg-about::after{
+    z-index: -300;
+    content: '';
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(1, 39, 55, 0.8);
+}
+
+
+#hero-text p{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 57px;
+    letter-spacing: 0.004em;
+    text-align: left;
+
+}
+
+
+.navLink:hover div{
+    width: 100%;
+    height: 2px;
+    transition: all 1s ease-in-out;
+    color: white;
+}
+
+.navLink2{
+    z-index: 1;
+}
+
+
+
+.navLink2:hover div{
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease-in;
+    z-index: -1;
+
+}
+
+
+
+.navLink2 div{
+    width: 0px;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    transition: all 0.7s ease-in-out;
+    border-radius: 10px;
+}
+.navLink div{
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    transition: all 1s ease-in-out;
+}
+
+.services:hover > .color {
+    color :rgba(255, 214, 0, 1);
+    
+}
+
+.services:hover div{
+    background-color: rgba(255, 214, 0, 1);
+}
+.services:hover div .color{
+    font-size: 1rem;
+    color: black;
+}
+.services >.color,.services div,.services div .color{
+    transition: all .5s ease-in-out;
+}
+
+#hero-text p::after{
+    content: 'A supportive learning environment with access to mentors and project opportunities.';
+
+    animation: text 7s infinite ease-out reverse;
+
+}
+
+
+@keyframes text {
+   
+
+    25%{
+        opacity: 0.7;
+    }
+
+    45%{
+        opacity: 1;
+    }
+
+   
+    50%{
+        content: 'Actively manage and adjust planned timelines and activities to overcome challenges,meet deadlines';
+        
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
