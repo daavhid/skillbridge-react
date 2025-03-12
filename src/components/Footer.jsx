@@ -9,7 +9,7 @@ const Footer = ({page}) => {
             <li className="md:text-xl text-xs">Skill Bridge</li>
             <li className="md:text-xl text-xs">Help</li>
             <li className="md:text-xl text-xs">About us</li>
-            <li className="md:text-xl text-xs">Get the app</li>
+            <li className="md:text-xl text-xs">Get the Real App</li>
         </ul>
         <ul className="text-sm flex md:flex-col gap-8  justify-between">
             <li className="font-semibold md:text-xl ">Contact us</li>
@@ -26,13 +26,13 @@ const Footer = ({page}) => {
         </li>
         <li className=''>
             <span className="text-sm ml-auto font-light md:w-1/3 block">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu</span><br/>
-            <div className="flex   gap-2 pt-1 justify-end">
+            {/* <div className="flex   gap-2 pt-1 justify-end">
     
                 <FaTwitter className="fab fa-twitter"/>
                 <FaFacebook className="fab fa-twitter"/>
                 <FaPinterest className="fab fa-twitter"/>
                 <FaPinterest className="fab fa-twitter"/>
-            </div>
+            </div> */}
 
         </li>
 
